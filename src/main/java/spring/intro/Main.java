@@ -12,9 +12,9 @@ public class Main {
         UserService userService = context.getBean(UserService.class);
 
         User bob = new User();
-        bob.setFirstName("Bob");
+        bob.setName("Bob");
         User alisa = new User();
-        alisa.setFirstName("Alisa");
+        alisa.setName("Alisa");
         userService.add(bob);
         userService.add(alisa);
         userService.listUsers().forEach(System.out::println);
